@@ -1,0 +1,82 @@
+html, body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	height: 100%;
+	margin: auto;
+	max-width: 990px;
+	padding: 0 1em;
+}
+
+footer{
+	font-size: 0.8em;
+	margin: 3em auto auto;
+	padding-bottom: 1em;
+	text-align: center;
+}
+
+header{
+	border-bottom: 1px solid #000;
+	margin-bottom: 0;
+	overflow: hidden;
+	padding: 1em 0 0.5em;
+	position: relative;
+
+}
+
+.header-titulo a{
+	color: black;
+	display: block;
+	float: left;
+	font-size: 2.5em;
+	text-align: left;
+	text-decoration: none;
+}
+
+.main{
+	display: block;
+	margin: auto;
+	max-width: 600px;
+	min-height: 70% !important;
+}
+
+.main-item{
+	margin-bottom: 1em;
+}
+
+.main-item .item-nombre{
+	font-size: 1.3em;
+	font-weight: 400;
+	line-height: 0.1em;
+	margin-left: 1.4em;
+	padding: 0;
+}
+
+.main-item .item-descripcion{
+	margin: 0 0 0 2.25em;
+}
+
+.main-titulo{
+	font-weight: 400;
+	font-size: 2em;
+	margin-bottom: 1.6em;
+	text-align: center;
+}
+
+.menu ul{
+	display: block;
+	margin: 0;
+	padding-top: 0.9em;
+	text-align: center;
+}
+
+.menu ul li {
+	display: inline;
+	float: right;
+	padding: 0 0 0 1em;
+}
+
+.menu ul li a {
+	color: red;
+	font-size: 0.8em;
+	text-decoration: none;
+}
