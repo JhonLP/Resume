@@ -39,25 +39,33 @@ header{
 	min-height: 70% !important;
 }
 
+.main-items{
+	max-width: 500px;
+	margin: auto;
+}
+
 .main-item{
-	margin-bottom: 1em;
+	margin-bottom: 2em;
 }
 
 .main-item .item-nombre{
 	font-size: 1.3em;
 	font-weight: 400;
 	line-height: 0.1em;
+	margin-bottom: 0.2em;
 	margin-left: 1.4em;
 	padding: 0;
+	text-indent: -1.4em;
 }
 
 .main-item .item-descripcion{
+	font-size: 0.9em;
 	margin: 0 0 0 2.25em;
 }
 
 .main-titulo{
 	font-weight: 400;
-	font-size: 2em;
+	font-size: 1.7em;
 	margin-bottom: 1.6em;
 	text-align: center;
 }
@@ -66,12 +74,11 @@ header{
 	display: block;
 	margin: 0;
 	padding-top: 0.9em;
-	text-align: center;
+	text-align: right;
 }
 
 .menu ul li {
 	display: inline;
-	float: right;
 	padding: 0 0 0 1em;
 }
 
@@ -79,4 +86,38 @@ header{
 	color: red;
 	font-size: 0.8em;
 	text-decoration: none;
+}
+
+.icon{
+	width: 0.8em;
+	height: 0.8em;
+	vertical-align: middle;
+	padding-right: .25em;
+}
+
+.pos{
+	fill:#4ab261;
+}
+
+.adv{
+	fill:#f4c633;
+}
+
+.neg{
+	fill:#ca0107;
+}
+
+@media screen and (max-width: 681px){
+	
+	.header-titulo a{
+		float: none;
+		text-align: center;
+	}
+
+	.menu ul{
+		float: none;
+		padding: 0;
+		text-align: center;
+	}
+
 }
