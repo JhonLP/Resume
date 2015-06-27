@@ -1,2 +1,2 @@
 # Resume
-Resume de JhonLP.com con django y ReactJs
+Résumé de JhonLP.com hecho con nodejs, ReactJS, JQuery, Stylus y flexbox.

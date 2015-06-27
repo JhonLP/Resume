@@ -1,5 +1,5 @@
-dev.db
-*.pyc
-*.png
-*.jpg
-*.ico
+node_modules
+dist
+.tmp
+.sass-cache
+bower_components

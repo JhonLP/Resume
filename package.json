@@ -1,0 +1,11 @@
+{
+  "name": "ResumeJS",
+  "version": "2.0.0",
+  "dependencies": {
+    "express": "^4.13.0",
+    "express-session": "^1.11.2",
+    "express.io": "^1.1.13",
+    "swig": "^1.4.2",
+    "underscore": "^1.8.3"
+  }
+}
