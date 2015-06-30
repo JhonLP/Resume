@@ -1,0 +1,45 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.fl-body{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 100vh;
+  border: solid 3px blue;
+}
+
+header {
+  border: solid 3px red;
+}
+
+.header-titulo{
+  flex: 5;
+}
+
+.main{
+  border:solid 3px black;
+}
+
+footer{
+  border: solid 3px yellow;
+}
+
+.icon {
+  width: 0.8em;
+  height: 0.8em;
+  vertical-align: middle;
+  padding-right: 0.25em;
+}
+.pos {
+  fill: #4ab261;
+}
+.adv {
+  fill: #f4c633;
+}
+.neg {
+  fill: #ca0107;
+}

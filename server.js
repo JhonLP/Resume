@@ -34,6 +34,7 @@ server.configure(function () {
 
 //Controllers
 var homeController = require('./src/controllers/home');
+var resumeController = require('./src/controllers/resume');
 
 homeController(server,users);
 

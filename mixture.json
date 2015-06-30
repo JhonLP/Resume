@@ -5,8 +5,8 @@
         "src/assets/css"
     ],
     "preprocessorScriptOutput": "dist/assets/js",
-    "preprocessorStyleOutput": "dist/assets/css",
-    "projectName": "Project Name",
+    "preprocessorStyleOutput": "src/assets/css",
+    "projectName": "Resume",
     "projectDescription": "Project Description",
     "publishedId": null,
     "serverHostname": null,
