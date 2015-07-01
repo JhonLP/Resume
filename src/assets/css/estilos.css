@@ -7,6 +7,28 @@ html, body{
 	padding: 0 1em;
 }
 
+article a{
+	text-decoration: none;
+}
+
+article h4,h5{
+	margin: 0;
+}
+
+#contacto{
+	max-width: 250px;
+	margin: auto;
+}
+
+#contacto a{
+	text-decoration: none;
+	color: red;
+}
+
+#contacto p{
+	margin: 0 0 10px;
+}
+
 footer{
 	font-size: 0.8em;
 	margin: 3em auto auto;
@@ -32,7 +54,16 @@ header{
 	text-decoration: none;
 }
 
-.main{
+#hosting h2, #software h2{
+	font-weight: 400;
+}
+
+#hosting a, #software a{
+	text-decoration: none;
+	color: red;
+}
+
+.main, section{
 	display: block;
 	margin: auto;
 	max-width: 600px;
@@ -95,6 +126,13 @@ header{
 	padding-right: .25em;
 }
 
+.mobile, .email{
+	width: 2.5em;
+  height: 2.5em;
+  padding-right: 1em;
+  vertical-align: middle;
+}
+
 .pos{
 	fill:#4ab261;
 }
@@ -107,8 +145,17 @@ header{
 	fill:#ca0107;
 }
 
+#resume h2{
+	font-size: 1em;
+}
+
+#education li a{
+	text-decoration: none;
+	color: red;
+}
+
 @media screen and (max-width: 681px){
-	
+
 	.header-titulo a{
 		float: none;
 		text-align: center;
