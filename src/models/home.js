@@ -1,11 +1,11 @@
 var models = require('./models'),
 	Schema = models.Schema;
 
-var HomeSchema = Schema({
+var homeSchema = Schema({
   titulo : 'string',
 	descripcion : 'string'
 });
 
-var Home = models.model('post', HomeSchema);
+var Home = models.model('home', homeSchema);
 
 module.exports = Home;

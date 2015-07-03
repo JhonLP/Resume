@@ -37,8 +37,15 @@ var homeController = require('./src/controllers/home');
 var resumeController = require('./src/controllers/resume');
 var portfolioController = require('./src/controllers/portfolio');
 var useController = require('./src/controllers/use');
+var contactController = require('./src/controllers/contact');
+var postController = require('./src/controllers/post');
 
-homeController(server,users);
+homeController(server);
+resumeController(server);
+portfolioController(server);
+useController(server);
+contactController(server);
+postController(server);
 
 server.io.route('hello?', function (req) {
 	req.io.emit('saludo',{ //se envia a un usuario
@@ -63,6 +70,9 @@ server.get('/use', function (req,res) {
 });
 server.get('/contact', function (req,res) {
 	res.render('contact');
+});
+server.get('/post', function (req,res) {
+	res.render('post');
 });
 
 var port_number = process.env.PORT || 3000;

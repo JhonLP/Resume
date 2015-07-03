@@ -1,10 +1,10 @@
 var models = require('./models'),
 	Schema = models.Schema;
 
-var ResumeSchema = Schema({
+var resumeSchema = Schema({
 	descripcion : 'string'
 });
 
-var Resume = models.model('post', ResumeSchema);
+var Resume = models.model('resume', resumeSchema);
 
 module.exports = Resume;

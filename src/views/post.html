@@ -1,0 +1,20 @@
+{% extends 'plantilla.html' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<div class="main">
+    <div>
+  		<form method="POST" action="/contact/create-post">
+  			<textarea name="descripcion"></textarea>
+  			<button>Post</button>
+  		</form>
+  	</div>
+
+    {% for post in homes %}
+        <p>{{post.titulo}}</p>
+    {% endfor %}
+
+</div>
+
+{% endblock %}

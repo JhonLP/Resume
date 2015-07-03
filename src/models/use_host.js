@@ -1,12 +1,12 @@
 var models = require('./models'),
 	Schema = models.Schema;
 
-var HostSchema = Schema({
+var hostSchema = Schema({
   nombre : 'string',
 	descripcion : 'string',
 	url : 'string'
 });
 
-var Host = models.model('post', HostSchema);
+var Host = models.model('host', hostSchema);
 
 module.exports = Host;

@@ -1,7 +1,7 @@
 var models = require('./models'),
 	Schema = models.Schema;
 
-var ProyectoSchema = Schema({
+var proyectoSchema = Schema({
   titulo : 'string',
 	descripcion : 'string',
 	ano : 'string',
@@ -17,6 +17,6 @@ var ProyectoSchema = Schema({
 //Windows phone --> 5
 //Static --> 6
 
-var Proyecto = models.model('post', ProyectoSchema);
+var Proyecto = models.model('proyecto', proyectoSchema);
 
 module.exports = Proyecto;
