@@ -7,21 +7,13 @@
 
 		<h1 class="main-titulo">I build websites, software and mobile apps.</h1>
 		<div class="main-items">
+		{% for post in homes %}
 			<article class="main-item">
-				<h2 class="item-nombre"> <svg class="icon pos"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-palomita"></use></svg>I'm a developer.</h2>
-				<p class="item-descripcion">I write Java, C# and JavaScript. I design databases and write SQL.</p>
+				<h2 class="item-nombre"> <svg class="icon pos"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-palomita"></use></svg>{{post.titulo}}</h2>
+				<p class="item-descripcion">{{post.descripcion}}</p>
 			</article>
-
-			<article class="main-item">
-				<h2 class="item-nombre"> <svg class="icon pos"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-palomita"></use></svg>I'm a front-end web developer.</h2>
-				<p class="item-descripcion">I write HTML, client-side JavaScript, CSS and deal with browser compatibility.</p>
-			</article>
-
-			<article class="main-item">
-				<h2 class="item-nombre"> <svg class="icon pos"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-palomita"></use></svg>I'm a back-end web developer.</h2>
-				<p class="item-descripcion">I write PHP, Python, and server-side JavaScript.</p>
-			</article>
-
+		{% endfor %}
+		
 			<article class="main-item">
 				<h2 class="item-nombre"> <svg class="icon adv"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-advertencia"></use></svg>I'm a limited sysadmin.</h2>
 				<p class="item-descripcion">DevOps: yes. Pager duty: no.</p>
@@ -31,8 +23,6 @@
 				<p class="item-descripcion">Some people are designers. I am not.</p>
 			</article>
 		</div>
-
-
 
 	</section>
 

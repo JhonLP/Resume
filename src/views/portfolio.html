@@ -9,62 +9,69 @@
 
     <section>
       <article>
-        <h2>AngularJS</h2>
-
-        <h4 ><a href="#"><span  >AngularJS ToDo</span></a></h4>
-        <h5 >2015 </h5><span > A simple Angular ToDo list with Local Storage. </span>
-
-        <h4 ><a href="#"><span  >Movie's billboard </span></a></h4>
-        <h5 >2015 </h5><span > Billboard of movies connected to Rotten Tomatoes API. </span>
-
-        <h4 ><a href="#"><span  >Website Prototype </span></a></h4>
-        <h5 >2015 </h5><span > A web prototype with forms, real-time validation and grid. </span>
+        <h2>JavaScript</h2>
+            {% for post in proyectos %}
+            {% if post.categoria == 1 %}
+            <h4><a href="{{post.url}}"><span>{{post.titulo}}</span></a></h4>
+            <h5>{{post.ano}}</h5><span>{{post.descripcion}}</span>
+            {% endif %}
+            {% endfor %}
       </article>
 
       <article>
         <h2>Python</h2>
-
-          <h4 ><a href="#"><span  >Search Engine </span></a></h4>
-          <h5 >2014 </h5><span > Search engine components including a crawler, an index and a page rank algorithm. </span>
+            {% for post in proyectos %}
+            {% if post.categoria == 2 %}
+            <h4><a href="{{post.url}}"><span>{{post.titulo}}</span></a></h4>
+            <h5>{{post.ano}}</h5><span>{{post.descripcion}}</span>
+            {% endif %}
+            {% endfor %}
         </article>
 
         <article>
           <h2 >PHP</h2>
-
-            <h4 ><a href="#"><span  >San Carlos Vacation </span></a></h4>
-            <h5 >2015 </h5><span > Website with Data Base(MySQL) and users administrator. </span>
-
-            <h4 ><a href="#"><span  >Nace Incubadora </span></a></h4>
-            <h5 >2015 </h5><span > Login system and dynamic calendar. </span>
-
-          </article>
+              {% for post in proyectos %}
+              {% if post.categoria == 3 %}
+              <h4><a href="{{post.url}}"><span>{{post.titulo}}</span></a></h4>
+              <h5>{{post.ano}}</h5><span>{{post.descripcion}}</span>
+              {% endif %}
+              {% endfor %}
+        </article>
 
           <article>
             <h2> WordPress</h2>
             <p> The sites I build with WordPress use it as a CMS more than a blogging platform. </p>
 
-            <h4 ><a href="#"><span  >Go2Sancarlos</span></a></h4>
-            <h5 >2015: </h5> <a href="http://go2sancarlos.com/" rel="external" target="_blank">Go2SanCarlos.com</a>
+            {% for post in proyectos %}
+            {% if post.categoria == 4 %}
+            <h4><a href="{{post.url}}"><span>{{post.titulo}}</span></a></h4>
+            <h5>{{post.ano}}</h5><span>{{post.descripcion}}</span>
+            {% endif %}
+            {% endfor %}
 
           </article>
 
           <article>
             <h2 >Windows Phone</h2>
 
-            <h4><a href="#"><span  >The Legend Of Pizza </span></a></h4>
-            <h5 >2014 </h5><span > A Windows Phone's video game developed on JS </span>
-
+            {% for post in proyectos %}
+            {% if post.categoria == 5 %}
+            <h4><a href="{{post.url}}"><span>{{post.titulo}}</span></a></h4>
+            <h5>{{post.ano}}</h5><span>{{post.descripcion}}</span>
+            {% endif %}
+            {% endfor %}
           </article>
 
           <article>
             <h2 >Static Sites</h2>
             <p> A backend doesn't always make sense if content changes infrequently. </p>
 
-            <h4 ><a href="#"><span  >DulceTierra</span></a></h4>
-            <h5 >2014: </h5> <a href="http://dulcetierra.co/" rel="external" target="_blank">DulceTierra.co</a>
-
-            <h4><a href="#"><span  >Ricoyotas</span></a></h4>
-            <h5>2012: </h5> <a href="http://ricoyotas.com/" rel="external" target="_blank">Ricoyotas.com</a>
+            {% for post in proyectos %}
+            {% if post.categoria == 6 %}
+            <h4><a href="{{post.url}}"><span>{{post.titulo}}</span></a></h4>
+            <h5>{{post.ano}}</h5><span>{{post.descripcion}}</span>
+            {% endif %}
+            {% endfor %}
 
 
           </article>
