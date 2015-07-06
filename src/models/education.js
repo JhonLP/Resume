@@ -2,7 +2,7 @@ var models = require('./models'),
 	Schema = models.Schema;
 
 var educationSchema = Schema({
-  año : 'number',
+  ano : 'number',
 	titulo : 'string',
 	url : 'string',
 	lugar : 'string'

@@ -8,25 +8,18 @@
     <h1 class="main-titulo">Résumé</h1>
     <h2><strong>2011 - present: </strong> Freelance Web Developer </h2>
      <ul>
-       <li>WordPress themes.</li>
-       <li>Design and UX collaboration.</li>
-       <li>Build automation with Grunt and Bower (Yeoman).</li>
-       <li>PHP sites.</li>
-       <li>LAMP sysadmin.</li>
-       <li>AngularJS, Django, Rails, .NET, node.js (also io.js) and MVC.</li>
+       {% for post in resumes %}
+       <li>{{post.descripcion}}</li>
+       {% endfor %}
      </ul>
   </section>
   <section id="education">
     <h1 class="main-titulo">Education</h1>
      <ul>
-       <li class=""> 2014 - present:  <a href="#">Software Engineering</a>, ITSON </li>
-       <li> 2014:  <a href="#">JavaScript Design Patterns</a>, Udacity </li>
-       <li> 2014:  <a href="#">UX Design for Mobile Developers</a>, Udacity </li>
-       <li> 2014:  <a href="#">Responsive Web Design Fundamentals</a>, Udacity </li>
-       <li> 2014:  <a href="#">Web Development</a>, Udacity </li>
-       <li> 2013:  <a href="#">Developing Scalable Apps with Java</a>, Udacity </li>
-       <li> 2013:  <a href="#">Intro to Computer Science</a>, Udacity </li>
-       <li> 2011 - 2013:  <a href="#">Software Engineering</a>, Universidad TecMilenio </li>
+       <li> 2014 - present:  <a href="#">Software Engineering</a>, ITSON </li>
+       {% for post in educations %}
+       <li> {{post.ano}} <a href="{{post.url}}">{{post.titulo}}</a>, {{post.lugar}} </li>
+       {% endfor %}
      </ul>
   </section>
 </div>
