@@ -8,26 +8,17 @@
   <section id="hosting">
     <h2>Hosting</h2>
      <ul>
-       <li><a href="#">Aldea Host: </a> I currently host this site on Aldea Host with CloudFlare.</li>
-       <li><a href="#">Blue Host: </a>I used this for some clients.</li>
-       <li><a href="#">Hostinger: </a>Because had a really good free plan.</li>
-       <li><a href="#">Github: </a>Yes Github, don't ask.</li>
+         {% for item in host %}
+       <li><a href="{{item.url}}">{{item.nombre}}: </a>{{item.descripcion}}</li>
+       {% endfor %}
      </ul>
   </section>
   <section id="software">
     <h2>Software</h2>
      <ul>
-       <li><a href="#">Sublime 2</a></li>
-       <li><a href="#">Visual Studio 2013 and 2015</a></li>
-       <li><a href="#">NetBeans</a></li>
-       <li><a href="#">Eclipse</a></li>
-       <li><a href="#">Unity 4.5</a></li>
-       <li><a href="#">Construct 2</a></li>
-       <li><a href="#">Adobe Brackets</a></li>
-       <li><a href="#">Adobe PhotoShop</a></li>
-       <li><a href="#">Android Studio</a></li>
-       <li><a href="#">FileZilla</a></li>
-       <li><a href="#">Cmder</a></li>
+        {% for item in software %}
+       <li><a href="{{item.url}}">{{item.nombre}}</a></li>
+       {% endfor %}
      </ul>
   </section>
 </div>

@@ -21,7 +21,6 @@ var resumeController = function (server, users) {
 				res.status(500).send(error);
 				return;
 			}
-			console.log(informacion);
 			res.render('resume',informacion);
 		});
 	});
