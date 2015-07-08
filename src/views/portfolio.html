@@ -12,8 +12,12 @@
         <h2>JavaScript</h2>
             {% for post in proyectos %}
             {% if post.categoria == 1 %}
-            <h4><a href="{{post.url}}"><span>{{post.titulo}}</span></a></h4>
-            <h5>{{post.ano}}</h5><span>{{post.descripcion}}</span>
+            <a href="{{post.url}}" class="item-box" target="_blank">
+            <div class="item">
+                <h4><span>{{post.titulo}}</span></h4>
+                <h5>{{post.ano}}</h5><span>{{post.descripcion}}</span>
+            </div>
+            </a>
             {% endif %}
             {% endfor %}
       </article>
@@ -22,8 +26,12 @@
         <h2>Python</h2>
             {% for post in proyectos %}
             {% if post.categoria == 2 %}
-            <h4><a href="{{post.url}}"><span>{{post.titulo}}</span></a></h4>
-            <h5>{{post.ano}}</h5><span>{{post.descripcion}}</span>
+            <a href="{{post.url}}" class="item-box" target="_blank">
+            <div class="item">
+                <h4><span>{{post.titulo}}</span></h4>
+                <h5>{{post.ano}}</h5><span>{{post.descripcion}}</span>
+            </div>
+            </a>
             {% endif %}
             {% endfor %}
         </article>
@@ -32,8 +40,12 @@
           <h2 >PHP</h2>
               {% for post in proyectos %}
               {% if post.categoria == 3 %}
-              <h4><a href="{{post.url}}"><span>{{post.titulo}}</span></a></h4>
-              <h5>{{post.ano}}</h5><span>{{post.descripcion}}</span>
+              <a href="{{post.url}}" class="item-box" target="_blank">
+              <div class="item">
+                  <h4><span>{{post.titulo}}</span></h4>
+                  <h5>{{post.ano}}</h5><span>{{post.descripcion}}</span>
+              </div>
+              </a>
               {% endif %}
               {% endfor %}
         </article>
@@ -44,8 +56,12 @@
 
             {% for post in proyectos %}
             {% if post.categoria == 4 %}
-            <h4><a href="{{post.url}}"><span>{{post.titulo}}</span></a></h4>
-            <h5>{{post.ano}}</h5><span>{{post.descripcion}}</span>
+            <a href="{{post.url}}" class="item-box" target="_blank">
+            <div class="item">
+                <h4><span>{{post.titulo}}</span></h4>
+                <h5>{{post.ano}}</h5><span>{{post.descripcion}}</span>
+            </div>
+            </a>
             {% endif %}
             {% endfor %}
 
@@ -56,8 +72,12 @@
 
             {% for post in proyectos %}
             {% if post.categoria == 5 %}
-            <h4><a href="{{post.url}}"><span>{{post.titulo}}</span></a></h4>
-            <h5>{{post.ano}}</h5><span>{{post.descripcion}}</span>
+            <a href="{{post.url}}" class="item-box" target="_blank">
+            <div class="item">
+                <h4><span>{{post.titulo}}</span></h4>
+                <h5>{{post.ano}}</h5><span>{{post.descripcion}}</span>
+            </div>
+            </a>
             {% endif %}
             {% endfor %}
           </article>
@@ -68,8 +88,12 @@
 
             {% for post in proyectos %}
             {% if post.categoria == 6 %}
-            <h4><a href="{{post.url}}"><span>{{post.titulo}}</span></a></h4>
-            <h5>{{post.ano}}</h5><span>{{post.descripcion}}</span>
+            <a href="{{post.url}}" class="item-box" target="_blank">
+            <div class="item">
+                <h4><span>{{post.titulo}}</span></h4>
+                <h5>{{post.ano}}</h5><span>{{post.descripcion}}</span>
+            </div>
+            </a>
             {% endif %}
             {% endfor %}
 

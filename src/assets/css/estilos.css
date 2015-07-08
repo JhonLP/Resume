@@ -11,6 +11,21 @@ article a{
 	text-decoration: none;
 }
 
+.item{
+	border: 1px solid black;
+	color: black;
+	margin-top: 4px;
+	padding: 3px;
+}
+
+.item-box :hover{
+	background: rgba(73, 203, 148, 0.74);
+}
+
+article h4{
+	color: blue;
+}
+
 article h4,h5{
 	margin: 0;
 }
